@@ -1,3 +1,47 @@
+# sample
+[
+    {
+        "name": "홍길동",
+        "email": "hong@example.com",
+        "pswd": "password123",
+        "manager": "매니저1",
+        "sellist1": "판매목록1",
+        "text": "내용1"
+    },
+    {
+        "name": "John Smith",
+        "email": "john@example.com",
+        "pswd": "pass123",
+        "manager": "Manager2",
+        "sellist1": "Sales List 2",
+        "text": "Content 2"
+    },
+    {
+        "name": "이영희",
+        "email": "yeonghee@example.com",
+        "pswd": "비밀번호123",
+        "manager": "매니저3",
+        "sellist1": "판매목록3",
+        "text": "내용3"
+    },
+    {
+        "name": "Alex Johnson",
+        "email": "alex@example.com",
+        "pswd": "password456",
+        "manager": "Manager4",
+        "sellist1": "Sales List 4",
+        "text": "Content 4"
+    },
+    {
+        "name": "김철수",
+        "email": "chulsu@example.com",
+        "pswd": "비밀번호789",
+        "manager": "매니저5",
+        "sellist1": "판매목록5",
+        "text": "내용5"
+    }
+]
+
 from typing import List
 from beanie import PydanticObjectId
 from database.connections import Database
@@ -76,46 +120,3 @@ async def update_event_withjson(id: PydanticObjectId, request:Request) -> User:
         )
     return updated_user
 
-# sample
-[
-    {
-        "name": "홍길동",
-        "email": "hong@example.com",
-        "pswd": "password123",
-        "manager": "매니저1",
-        "sellist1": "판매목록1",
-        "text": "내용1"
-    },
-    {
-        "name": "John Smith",
-        "email": "john@example.com",
-        "pswd": "pass123",
-        "manager": "Manager2",
-        "sellist1": "Sales List 2",
-        "text": "Content 2"
-    },
-    {
-        "name": "이영희",
-        "email": "yeonghee@example.com",
-        "pswd": "비밀번호123",
-        "manager": "매니저3",
-        "sellist1": "판매목록3",
-        "text": "내용3"
-    },
-    {
-        "name": "Alex Johnson",
-        "email": "alex@example.com",
-        "pswd": "password456",
-        "manager": "Manager4",
-        "sellist1": "Sales List 4",
-        "text": "Content 4"
-    },
-    {
-        "name": "김철수",
-        "email": "chulsu@example.com",
-        "pswd": "비밀번호789",
-        "manager": "매니저5",
-        "sellist1": "판매목록5",
-        "text": "내용5"
-    }
-]
