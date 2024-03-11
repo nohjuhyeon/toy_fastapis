@@ -11,7 +11,8 @@ class User(Document): # 상속을 위한 것
     manager: Optional[str] = None
     sellist1 : Optional[str] = None
     text : Optional[str] = None
-  
+    editorContent : Optional[str] = None
+    
     class Settings:
         name = "users" # collection의 이름
   
